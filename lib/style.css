@@ -1,0 +1,123 @@
+.dt-picker {
+  position: relative;
+  display: inline-block;
+}
+
+.dt-picker, .dt-picker * {
+  box-sizing: border-box;
+}
+
+.dt-picker:focus {
+  outline: none;
+}
+
+.dt-picker-content {
+  position: absolute;
+  z-index: 61;
+  background: #fff;
+  border: solid 1px #ccc;
+  text-align: center;
+  width: 17.7em;
+}
+
+.dt-picker-content.top-right,
+.dt-picker-content.top-center,
+.dt-picker-content.top-left {
+  bottom: 0;
+}
+
+.dt-picker-content.top-right,
+.dt-picker-content.bottom-right {
+  right: 0;
+}
+
+.dt-picker-cell {
+  display: inline-block;
+  width: 2.5em;
+  height: 2.5em;
+  line-height: 2.5em;
+  cursor: pointer;
+}
+
+.dt-picker-cell:hover {
+  background: #ddd;
+}
+
+.dt-picker-cell-weekend {
+  color: #fd6b6b;
+}
+
+.dt-picker-cell-cross-month,
+.dt-picker-cell-cross-month.dt-picker-cell-disable:hover {
+  background: #f0f0f0;
+}
+
+.dt-picker-cell-disable {
+  color: #aaa;
+  cursor: default;
+}
+
+.dt-picker-cell-disable:hover {
+  background: initial;
+}
+
+.dt-picker-cell-current {
+  color: #e23;
+}
+
+.dt-picker-cell-disable.dt-picker-cell-current {
+  color: #ff919b;
+}
+
+.dt-picker-header {
+  border-bottom: solid 1px #ddd;
+}
+
+.dt-picker-week,
+.dt-picker-header .dt-picker-cell-month,
+.dt-picker-header .dt-picker-cell-year,
+.dt-picker-cell-selected,
+.dt-picker-cell-selected:hover {
+  font-weight: bold;
+}
+
+.dt-picker-cell-year {
+  width: 7em;
+}
+
+.dt-picker-cell-month {
+  width: 5em;
+}
+
+.dt-picker-cell-selected,
+.dt-picker-cell-selected:hover {
+  background: #ff4a4a;
+  color: #fff;
+}
+
+.dt-picker-week {
+  background: #ddd;
+}
+
+.dt-picker-week .dt-picker-cell:hover {
+  cursor: default;
+  background: initial;
+}
+
+.dt-picker-input-addon {
+  display: inline;
+  margin-left: -1.8em;
+  cursor: pointer;
+}
+
+.dt-picker-footer {
+  padding: 10px;
+}
+
+.dt-picker-footer button {
+  margin: 0 5px;
+}
+
+.dt-picker-time {
+  padding-top: 10px;
+}

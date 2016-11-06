@@ -1,0 +1,53 @@
+{
+  "extends": "airbnb",
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "experimentalObjectRestSpread": true,
+      "jsx": true
+    }
+  },
+  "root": true,
+  "env": {
+    "browser": true,
+    "node": true,
+    "commonjs": true,
+    "amd": true,
+    "mocha": true,
+    "es6": true
+  },
+  "globals": {
+    "window": true,
+    "document": true
+  },
+  "rules": {
+    "global-require": "warn",
+    "no-use-before-define": ["error", {"functions": false}],
+    "no-param-reassign": "warn",
+    // allow `1 + 'suffix'`
+    "prefer-template": "off",
+    "prefer-const": ["error", {"destructuring": "all"}],
+    // allow `{a: 1, b: 2}` with no comma as the end of object
+    "comma-dangle": "off",
+    // allow `let {abc} = object`
+    "object-curly-spacing": "off",
+    "max-len": ["warn", 150],
+    // allow `a ? b() || (c = d) : e()` as a expression
+    "no-unused-expressions": ["off", {"allowShortCircuit": true, "allowTernary": true}],
+    // prefer use single quotes in `<abc a='23'/>`
+    "jsx-quotes": ["error", "prefer-single"],
+    "react/jsx-indent": "warn",
+    // allow do not have `let React = require('react')`
+    "react/react-in-jsx-scope": "off",
+    // allow have multi component in a file
+    "react/no-multi-comp": "off",
+    // some webpack import will break this rule
+    "import/no-unresolved": "off",
+    // only warn when use () => {return 'a';}
+    "arrow-body-style": "warn",
+    "no-underscore-dangle": ["warn", { "allowAfterThis": true }],
+    "react/sort-comp": "off"
+  }
+}

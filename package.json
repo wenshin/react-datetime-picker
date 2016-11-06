@@ -1,0 +1,46 @@
+{
+  "name": "react-datetime-picker",
+  "version": "1.0.0",
+  "description": "react,datetime,datetimepicker",
+  "main": "index.js",
+  "repository": {
+    "url": "https://www.github.com/wenshin/react-datetime-picker",
+    "type": "git"
+  },
+  "scripts": {
+    "dev-server": "webpack-dev-server --hot --inline --progress",
+    "prebuild": "rm -r dist/docs",
+    "build": "webpack --build --progress --colors --optimize-dedupe",
+    "postbuild": "mv dist/docs/static/index.html dist/docs/"
+  },
+  "author": "yuanwen",
+  "license": "MIT",
+  "dependencies": {
+    "babel-core": "^6.18.2",
+    "babel-eslint": "^7.1.0",
+    "babel-loader": "^6.2.7",
+    "babel-plugin-syntax-async-functions": "^6.13.0",
+    "babel-plugin-transform-regenerator": "^6.16.1",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-react": "^6.16.0",
+    "babel-preset-stage-0": "^6.16.0",
+    "css-loader": "^0.25.0",
+    "eslint": "^3.9.1",
+    "eslint-config-airbnb": "^12.0.0",
+    "eslint-plugin-import": "^2.1.0",
+    "eslint-plugin-jsx-a11y": "^2.2.3",
+    "eslint-plugin-react": "^6.5.0",
+    "html-webpack-plugin": "^2.24.1",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.13.3",
+    "webpack-dev-middleware": "^1.8.4",
+    "webpack-dev-server": "^1.16.2",
+    "webpack-hot-middleware": "^2.13.1",
+    "classnames": "^2.2.5",
+    "moment": "^2.15.2",
+    "react-dom": "^15.3.2"
+  },
+  "peerDependencies": {
+    "react": "^15.3.2"
+  }
+}
