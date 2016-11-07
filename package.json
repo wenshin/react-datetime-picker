@@ -2,18 +2,25 @@
   "name": "react-datetime-picker",
   "version": "1.0.0",
   "description": "react,datetime,datetimepicker",
-  "main": "index.js",
+  "author": {
+    "name": "yuanwen",
+    "email": "wenshin2011@gmail.com",
+    "url": "https://github/wenshin/react-datetime-picker"
+  },
+  "files": [
+    "lib", "dist"
+  ],
+  "main": "lib/index.js",
   "repository": {
     "url": "https://www.github.com/wenshin/react-datetime-picker",
     "type": "git"
   },
   "scripts": {
-    "dev-server": "webpack-dev-server --hot --inline --progress",
-    "prebuild": "rm -r dist/docs",
-    "build": "webpack --build --progress --colors --optimize-dedupe",
-    "postbuild": "mv dist/docs/static/index.html dist/docs/"
+    "doc-server": "webpack-dev-server --hot --inline --progress",
+    "prebuildoc": "rm -r dist/docs",
+    "buildoc": "webpack --build --progress --colors --optimize-dedupe",
+    "postbuildoc": "mv dist/docs/static/index.html dist/docs/"
   },
-  "author": "yuanwen",
   "license": "MIT",
   "dependencies": {
     "babel-core": "^6.18.2",
