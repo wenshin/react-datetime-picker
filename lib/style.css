@@ -37,6 +37,7 @@
   height: 2.5em;
   line-height: 2.5em;
   cursor: pointer;
+  vertical-align: bottom;
 }
 
 .dt-picker-cell:hover {
@@ -80,6 +81,32 @@
 .dt-picker-cell-selected:hover {
   font-weight: bold;
 }
+
+.dt-picker-header-arrow {
+  width: 2.8em;
+}
+
+.arrow-left:after, .arrow-right:after {
+  content: ' ';
+  font-size: 0;
+  display: inline-block;
+  border: solid 6px #555;
+}
+
+.arrow-left:after {
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+  margin-left: -9px;
+}
+
+.arrow-right:after {
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  margin-right: -9px;
+}
+
 
 .dt-picker-cell-year {
   width: 7em;
