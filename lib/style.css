@@ -83,7 +83,7 @@
 }
 
 .dt-picker-header-arrow {
-  width: 2.8em;
+  width: 2.75em;
 }
 
 .arrow-left:after, .arrow-right:after {
@@ -129,6 +129,10 @@
 .dt-picker-week .dt-picker-cell:hover {
   cursor: default;
   background: initial;
+}
+
+.dt-picker-input input {
+  width: 100%;
 }
 
 .dt-picker-input-addon {

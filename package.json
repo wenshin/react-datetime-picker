@@ -10,7 +10,7 @@
   "files": [
     "lib", "dist"
   ],
-  "main": "lib/index.js",
+  "main": "dist/index.js",
   "repository": {
     "url": "https://www.github.com/wenshin/react-datetime-picker",
     "type": "git"
@@ -19,10 +19,19 @@
     "doc-server": "webpack-dev-server --hot --inline --progress",
     "prebuildoc": "rm -r dist/docs",
     "buildoc": "webpack --build --progress --colors --optimize-dedupe",
-    "postbuildoc": "mv dist/docs/static/index.html dist/docs/"
+    "postbuildoc": "mv dist/docs/static/index.html dist/docs/",
+    "prepublish": "babel lib --out-dir dist && cp lib/style.css dist/style.css"
   },
   "license": "MIT",
   "dependencies": {
+    "classnames": "^2.2.5",
+    "moment": "^2.15.2"
+  },
+  "peerDependency": {
+    "react-dom": "^0.14.0 || ^15.3.2",
+    "react": "^0.14.0 || ^15.3.2"
+  },
+  "devDependencies": {
     "babel-core": "^6.18.2",
     "babel-eslint": "^7.1.0",
     "babel-loader": "^6.2.7",
@@ -42,10 +51,6 @@
     "webpack": "^1.13.3",
     "webpack-dev-middleware": "^1.8.4",
     "webpack-dev-server": "^1.16.2",
-    "webpack-hot-middleware": "^2.13.1",
-    "classnames": "^2.2.5",
-    "moment": "^2.15.2",
-    "react-dom": "^15.3.2",
-    "react": "^15.3.2"
+    "webpack-hot-middleware": "^2.13.1"
   }
 }
