@@ -48,6 +48,8 @@
     // only warn when use () => {return 'a';}
     "arrow-body-style": "warn",
     "no-underscore-dangle": ["warn", { "allowAfterThis": true }],
-    "react/sort-comp": "off"
+    "react/sort-comp": "off",
+    "react/forbid-prop-types": "off",
+    "react/jsx-filename-extension": "off"
   }
 }
