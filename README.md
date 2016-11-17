@@ -10,6 +10,12 @@ A independent and powerful date time picker for React
 
 # ChangeLog
 
-**2016-11-07**
+**2016-11-17 v1.0.2**
+    * add default period styles
+
+**2016-11-16 v1.0.1**
+    * add Period component
+
+**2016-11-07 v1.0.0**
 
     * first version
