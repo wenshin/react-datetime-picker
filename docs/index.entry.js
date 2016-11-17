@@ -3,8 +3,7 @@ import ReactDOM from 'react-dom';
 import moment from 'moment';
 
 import './init';
-import '../lib/style.css';
-import DatetimePicker, {Period} from '../lib';
+import DatetimePicker, {Period} from '../webpack';
 
 
 class App extends Component {
@@ -14,7 +13,6 @@ class App extends Component {
   }
 
   render() {
-    console.log(this.state.period)
     return (
       <div>
         <article>

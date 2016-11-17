@@ -30,7 +30,6 @@ const loaders = [
   },
   {
     test: /\.css$/,
-    include: /lib/,
     loader: 'style!css'
   },
   {
