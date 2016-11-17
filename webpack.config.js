@@ -11,7 +11,7 @@ const FILENAME_TMPL = isBuild ? '[name]-[hash].min.' : '[name].';
 const ASSETNAME_TMPL = '[name]-[md5:hash:base64:7].[ext]';
 
 // 必须是前面带 /，否则 webpack-dev-server 无法识别
-const STATIC_URL = '/static';
+const STATIC_URL = '/';
 const SRC_PATH = path.resolve('lib');
 const DIST_PATH = path.resolve('dist');
 const DOCS_PATH = path.resolve('docs');

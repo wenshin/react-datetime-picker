@@ -152,3 +152,20 @@
 .dt-picker-time {
   padding-top: 10px;
 }
+
+/**
+ * period styles
+ */
+.period {
+  display: inline-block;
+}
+
+.period > div {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.period__to {
+  vertical-align: middle;
+  margin: 0 10px;
+}
