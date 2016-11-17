@@ -10,7 +10,8 @@ A independent and powerful date time picker for React
 
 # ChangeLog
 
-**2016-11-17 v1.0.2**
+**2016-11-17 v1.0.3**
+    * use a new path for webpack 
     * add default period styles
 
 **2016-11-16 v1.0.1**
