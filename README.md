@@ -63,7 +63,8 @@ import DateTimePicker from 'react-nice-datetime';
 
 # ChangeLog
 
-**2016-11-17 v1.0.4**
+**2017-01-10 v1.0.4**
+    * fix weekends highlight bug
     * fix limit not active bug
 
 **2016-11-17 v1.0.3**
