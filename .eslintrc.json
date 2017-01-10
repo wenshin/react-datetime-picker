@@ -24,6 +24,7 @@
   },
   "rules": {
     "global-require": "warn",
+    "no-plusplus": "off",
     "no-use-before-define": ["error", {"functions": false}],
     "no-param-reassign": "warn",
     // allow `1 + 'suffix'`
