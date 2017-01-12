@@ -14,6 +14,10 @@ class App extends Component {
   }
 
   render() {
+    const limit = {
+      min: moment().subtract(5, 'day'),
+      max: moment().add(5, 'day')
+    };
     return (
       <div>
         <article>
@@ -24,7 +28,7 @@ class App extends Component {
                 style={{width: '300px'}}
                 value={this.state.datetime}
                 format='YYYY-MM-DD HH:mm:ss'
-                limit={{max: this.state.period}}
+                limit={limit}
                 onChange={datetime => this.setState({datetime})}
               />
             </div>
@@ -38,10 +42,7 @@ class App extends Component {
                 style={{width: '300px'}}
                 value={this.state.period}
                 format='YYYY-MM-DD HH:mm:ss'
-                limit={{
-                  min: moment().subtract(5, 'day'),
-                  max: moment().add(5, 'day')
-                }}
+                limit={limit}
                 onChange={period => this.setState({period})}
               />
             </div>
