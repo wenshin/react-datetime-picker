@@ -1,7 +1,7 @@
-require('./lib/style.css');
+require('./dist/style.css');
 
-const DatetimePicker = require('./lib').default;
-const Period = require('./lib').Period;
+const DatetimePicker = require('./dist').default;
+const Period = require('./dist').Period;
 
 DatetimePicker.Period = Period;
 
