@@ -8,7 +8,7 @@
     "url": "https://github/wenshin/react-datetime-picker"
   },
   "files": [
-    "lib", "dist", "webpack.js"
+    "lib", "dist", "webpack.js", "README.md"
   ],
   "main": "dist/index.js",
   "repository": {

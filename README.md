@@ -26,7 +26,7 @@ import DateTimePicker from 'react-nice-datetime';
 />
 ```
 
-### Props
+### DateTimePicker Props
 
 **value**: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
 支持符合 moment 日期格式的字符串以及 moment 对象。
@@ -59,6 +59,21 @@ import DateTimePicker from 'react-nice-datetime';
 
 **inputIconClass**: PropTypes.string
 输入框右侧图标样式，例如 'fa fa-calendar'
+
+
+### Period Props
+
+**key**: PropTypes.string, the key prop for react element.
+**value**: PropTypes.object, `{start, end}`
+**className**: PropTypes.string,
+**style**: PropTypes.object,
+**format**: PropTypes.string, the `format` prop of DateTimePicker `format` prop.
+**connector**: PropTypes.any, the `connector` between two DateTimePicker.
+**onChange**: PropTypes.func,
+**startEndOf**: PropTypes.bool, the start date will use startOf, and end date will use endOf
+**limit**: PropTypes.object, `{start, end}` the range of period
+**clearable**: PropTypes.bool,
+**inputIconClass**: PropTypes.string, the icon class of input icon
 
 
 # ChangeLog
