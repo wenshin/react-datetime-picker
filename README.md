@@ -76,7 +76,15 @@ import DateTimePicker from 'react-nice-datetime';
 **inputIconClass**: PropTypes.string, the icon class of input icon
 
 
+### utils
+
+**parseFormat(String)**: parse format string to object with `{dateType, timeType, unit, value}`.
+eg. format is 'YYYY-MM-DD HH:mm:ss' will parsed as `{dateType: 'D', timeType: 's', unit: 'second', value: 'YMDHms'}`
+
 # ChangeLog
+
+**2017-01-10 v1.0.5**
+    * fix Period bug
 
 **2017-01-10 v1.0.4**
     * fix weekends highlight bug
