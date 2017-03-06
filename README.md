@@ -96,6 +96,10 @@ eg. format is 'YYYY-MM-DD HH:mm:ss' will parsed as `{dateType: 'D', timeType: 's
 
 # ChangeLog
 
+**2017-03-06 v1.0.7**
+
+   * Fix Mac file name case insensitive bug
+
 **2017-03-06 v1.0.6**
 
     * Period support disabled prop
