@@ -70,6 +70,17 @@ class App extends Component {
               />
             </div>
           </section>
+          <section>
+            <h1>Period Disabled</h1>
+            <div>
+              <Period
+                startEndOf
+                style={{width: '300px'}}
+                value={period}
+                disabled
+              />
+            </div>
+          </section>
         </article>
       </div>
     );
