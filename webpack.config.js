@@ -101,7 +101,8 @@ const webpackConfig = {
       colors: true
     },
     // 可通过 IP 地址访问
-    host: '0.0.0.0'
+    host: '0.0.0.0',
+    port: 8088
   },
   watch: !isBuild,
 

@@ -44,7 +44,8 @@ import DateTimePicker from 'react-nice-datetime';
 
 **onChange**: PropTypes.func.isRequired,
 
-**startOf**: PropTypes.bool,
+**startOf**: PropTypes.bool
+
 **endOf**: PropTypes.bool, 如果为 true 会调用 moment().endOf() 来获取当前时间格式的低一级单位的最大值
 如格式 YYYY-MM-DD 的日期，得到的 moment 对象实际值为 YYYY-MM-DD 23:59:59
 注意：用来在触发日期变更前进行修改日期，startOf 和 endOf 只能二选其一，两个都提供，则只使用 endOf
@@ -64,15 +65,27 @@ import DateTimePicker from 'react-nice-datetime';
 ### Period Props
 
 **key**: PropTypes.string, the key prop for react element.
+
 **value**: PropTypes.object, `{start, end}`
+
 **className**: PropTypes.string,
+
 **style**: PropTypes.object,
+
 **format**: PropTypes.string, the `format` prop of DateTimePicker `format` prop.
+
 **connector**: PropTypes.any, the `connector` between two DateTimePicker.
+
 **onChange**: PropTypes.func,
+
 **startEndOf**: PropTypes.bool, the start date will use startOf, and end date will use endOf
+
 **limit**: PropTypes.object, `{start, end}` the range of period
+
 **clearable**: PropTypes.bool,
+
+**disabled**: PropTypes.bool,
+
 **inputIconClass**: PropTypes.string, the icon class of input icon
 
 
@@ -83,14 +96,21 @@ eg. format is 'YYYY-MM-DD HH:mm:ss' will parsed as `{dateType: 'D', timeType: 's
 
 # ChangeLog
 
+**2017-03-06 v1.0.6**
+
+    * Period support disabled prop
+
 **2017-01-10 v1.0.5**
+
     * fix Period bug
 
 **2017-01-10 v1.0.4**
+
     * fix weekends highlight bug
     * fix limit not active bug
 
 **2016-11-17 v1.0.3**
+
     * use a new path for webpack
     * add default period styles
 
