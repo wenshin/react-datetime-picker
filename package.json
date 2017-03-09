@@ -1,14 +1,23 @@
 {
   "name": "react-nice-datetime",
-  "version": "1.0.3",
+  "version": "1.0.6",
   "description": "react,datetime,datetimepicker",
   "author": {
     "name": "yuanwen",
     "email": "wenshin2011@gmail.com",
     "url": "https://github/wenshin/react-datetime-picker"
   },
+  "keywords": [
+    "react",
+    "datetime-picker",
+    "mt-component"
+  ],
   "files": [
-    "lib", "dist", "webpack.js"
+    "lib",
+    "dist",
+    "build",
+    "webpack.js",
+    "README.md"
   ],
   "main": "dist/index.js",
   "repository": {
@@ -16,10 +25,10 @@
     "type": "git"
   },
   "scripts": {
-    "doc-server": "webpack-dev-server --hot --inline --progress",
-    "prebuildoc": "rm -r dist/docs",
-    "buildoc": "webpack --build --progress --colors --optimize-dedupe",
-    "postbuildoc": "mv dist/docs/static/index.html dist/docs/",
+    "example-server": "webpack-dev-server --hot --inline --progress",
+    "prebuildexample": "rm -r build/examples/",
+    "buildexample": "webpack --build --progress --colors --optimize-dedupe",
+    "postbuildexample": "mv build/examples/static/index.html build/examples/",
     "prepublish": "babel lib --out-dir dist && cp lib/style.css dist/style.css"
   },
   "license": "MIT",
@@ -32,6 +41,7 @@
     "react": "^0.14.0 || ^15.3.2"
   },
   "devDependencies": {
+    "babel-cli": "^6.23.0",
     "babel-core": "^6.18.2",
     "babel-eslint": "^7.1.0",
     "babel-loader": "^6.2.7",
