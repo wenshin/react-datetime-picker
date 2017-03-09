@@ -8,7 +8,12 @@
     "url": "https://github/wenshin/react-datetime-picker"
   },
   "files": [
-    "lib", "dist", "webpack.js", "README.md"
+    "lib", "dist", "webpack.js", "README.md", "build"
+  ],
+  "keywords": [
+    "react",
+    "datetime-picker",
+    "mt-component"
   ],
   "main": "dist/index.js",
   "repository": {
@@ -16,10 +21,10 @@
     "type": "git"
   },
   "scripts": {
-    "doc-server": "webpack-dev-server --hot --inline --progress",
-    "prebuildoc": "rm -r dist/docs",
-    "buildoc": "webpack --build --progress --colors --optimize-dedupe",
-    "postbuildoc": "mv dist/docs/static/index.html dist/docs/",
+    "example-server": "webpack-dev-server --hot --inline --progress",
+    "prebuildexample": "rm -r build/examples",
+    "buildexample": "webpack --build --progress --colors --optimize-dedupe",
+    "postbuildexample": "mv build/examples/static/index.html build/examples/",
     "prepublish": "babel lib --out-dir dist && cp lib/style.css dist/style.css"
   },
   "license": "MIT",

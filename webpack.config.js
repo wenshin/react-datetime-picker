@@ -15,7 +15,9 @@ const STATIC_URL = '/';
 const SRC_PATH = path.resolve('lib');
 const DIST_PATH = path.resolve('dist');
 const DOCS_PATH = path.resolve('docs');
-const DOCS_DIST_PATH = path.join(DIST_PATH, 'docs');
+// const DOCS_DIST_PATH = path.join(DIST_PATH, 'docs');
+const BUILD_PATH = path.resolve('build');
+const BUILD_EXAMPLE_PATH = path.join(BUILD_PATH, 'examples');
 
 /**
  * Get loader
@@ -82,12 +84,12 @@ const webpackConfig = {
     filename: FILENAME_TMPL + 'js',
     chunkFilename: FILENAME_TMPL.replace('hash', 'chunkhash') + 'js',
     // NOTE: 必须是绝对路径
-    path: path.join(DOCS_DIST_PATH, STATIC_URL),
+    path: path.join(BUILD_EXAMPLE_PATH, STATIC_URL),
     publicPath: STATIC_URL,
   },
 
   devServer: {
-    contentBase: DOCS_DIST_PATH,
+    contentBase: BUILD_EXAMPLE_PATH,
     // NOTE devServer.publicPath 必须和 output.publicPath 一致
     publicPath: STATIC_URL,
     hot: true,
